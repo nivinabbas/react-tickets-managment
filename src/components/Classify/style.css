@@ -1,0 +1,105 @@
+.classify {
+  flex: 0.3;
+  height: 100vh;
+  background-color: rgba(224, 224, 224, 0.26);
+  position: relative;
+}
+
+.goal-select {
+  border: none;
+  background: transparent;
+}
+
+.classify > div {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.classify > div > h2 {
+  margin-left: 8px;
+  text-decoration: underline;
+  color: #65adea;
+  font-weight: bold;
+}
+
+.classify > div > h4 {
+  color: #65adea;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.classify > div > p {
+  color: gray;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.classify > div > span {
+  color: rgb(179, 179, 179);
+  letter-spacing: 0.1rem;
+  font-size: 0.5rem;
+}
+
+.classify > div > input {
+  border: solid 1px rgb(179, 179, 179);
+  background-color: transparent;
+  outline: none;
+  border-radius: 4px;
+  width: 80%;
+  font-size: 0.7rem;
+  font-weight: normal;
+  padding: 8px;
+}
+
+.danger {
+  color: red;
+}
+.proceed {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  height: 40px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background-color: #65adea;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.proceed:disabled {
+  background-color: #a3e6f8;
+  cursor: not-allowed;
+}
+
+/* Select */
+
+.select-dropdown,
+.select-dropdown * {
+  position: relative;
+  box-sizing: border-box;
+  width: 80%;
+}
+.select-dropdown {
+  position: relative;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+}
+.select-dropdown select {
+  font-size: 0.7rem;
+  font-weight: normal;
+  width: 100%;
+  padding: 8px 10px 8px 10px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-dropdown select:active,
+.select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
