@@ -1,0 +1,99 @@
+.conversation {
+  flex: 1;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+
+.conversation > div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  padding-top: 15px;
+}
+
+.conversation > div:first-child > i,
+h2,
+h4 {
+  color: #ccc;
+}
+
+.title {
+  flex: 1;
+}
+
+.timer {
+  margin-right: 8px;
+}
+
+.clock {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.archive {
+  margin-left: 8px;
+}
+
+.messages {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+}
+.message {
+  background-color: #e7e7e7;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding: 12px;
+  margin: 8px;
+  max-width: fit-content;
+}
+
+.message > p {
+  color: #323232;
+}
+
+.message-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+
+  border-top: solid 1px #e7e7e7;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #cdcdcd31;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.message-box > input {
+  flex: 1;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.message-box > button {
+  height: 40%;
+  min-width: 80px;
+  background-color: #65adea;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.message-box > button:disabled {
+  background-color: #a3e6f8;
+  cursor: not-allowed;
+}
